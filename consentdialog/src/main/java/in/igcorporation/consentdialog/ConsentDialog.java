@@ -248,6 +248,13 @@ public class ConsentDialog extends AppCompatDialog implements View.OnClickListen
 
     //Open Privacy Url when user clicks on LearnHow app uses Data or selects Adprovider
     private void openPrivacyUrl(String privacyUrl){
+
+        //check if user wants clickListener or not..If yes..call that
+        if (builder.privacyPolicyClickListener!=null){
+            builder.privacyPolicyClickListener.onPrivacyPolicyClicked(privacyUrl);
+            return;
+        }
+
         try{
             Uri uri = Uri.parse(privacyUrl);
             Intent intent = new Intent(Intent.ACTION_VIEW,uri);
@@ -282,6 +289,7 @@ public class ConsentDialog extends AppCompatDialog implements View.OnClickListen
         private boolean isPersonalisedEnabled=false,isNonPersonalisedEnabled=false,isPaidEnabled=false;
         private String topLabel,mainLabel,explanationLabel="", learnHowLabel ="",listProvidersLearnHowLabel="",nonPersonalisedLearnHow="",nonPersonalisedExplanation="",mListProviderExplanation="";
         private String mainPersonalisedButtonText,mainNonPersonalisedButtonText,mainPaidButtonText,agreeButtonText,backButtonText;
+        private PrivacyPolicyClickListener privacyPolicyClickListener;
 
 
 
@@ -298,6 +306,10 @@ public class ConsentDialog extends AppCompatDialog implements View.OnClickListen
             mainPersonalisedButtonText=context.getString(R.string.personalised_button);
             mainPaidButtonText=context.getString(R.string.pay_button);
 
+        }
+
+        public interface PrivacyPolicyClickListener{
+            void onPrivacyPolicyClicked(String privacyUrl);
         }
 
         //For Setting LearnHow in ListProviders Layout
@@ -413,6 +425,12 @@ public class ConsentDialog extends AppCompatDialog implements View.OnClickListen
         //For Enabling PaidButton
         public Builder withPaidOption(){
             isPaidEnabled = true;
+            return this;
+        }
+
+        //for setting listener for privacyPolicyClick
+        public Builder withPrivacyPolicyClickListener(PrivacyPolicyClickListener privacyPolicyClickListener){
+            this.privacyPolicyClickListener = privacyPolicyClickListener;
             return this;
         }
 

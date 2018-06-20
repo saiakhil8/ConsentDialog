@@ -1,4 +1,4 @@
-# ConsentDialog
+# ConsentDialog   [![](https://jitpack.io/v/saiakhil90/ConsentDialog.svg)](https://jitpack.io/#saiakhil90/ConsentDialog)
 
 A Fully Customisable, Simple and Easy to use Library for Custom Consent Form.Looks alike Admob Consent Form and Does everything we want.This Library is for those who have more than 12 adproviders in admob..However can be used for universal adProviders.
 

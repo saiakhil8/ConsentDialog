@@ -61,6 +61,14 @@ A Fully Customisable, Simple and Easy to use Library for Custom Consent Form.Loo
                 .withPersonalisedAdsOption()
                 .withNonPersonalisedAdsOption()
                 
+           //Set if u want privacyPolicyClickListener
+                .withPrivacyPolicyClickListener(new ConsentDialog.Builder.PrivacyPolicyClickListener() {
+                    @Override
+                    public void onPrivacyPolicyClicked(String privacyUrl) {
+                                         
+                    }
+                })   
+                
            //Build     
            
                 .build();

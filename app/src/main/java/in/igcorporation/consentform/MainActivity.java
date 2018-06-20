@@ -63,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
                 .privacyUrl("https://saiakhil.com")
                 .withPaidOption()
                 .withPersonalisedAdsOption()
+                .withPrivacyPolicyClickListener(new ConsentDialog.Builder.PrivacyPolicyClickListener() {
+                    @Override
+                    public void onPrivacyPolicyClicked(String privacyUrl) {
+
+                    }
+                })
                 .withNonPersonalisedAdsOption()
                 .appName("AppName")
                 .build();

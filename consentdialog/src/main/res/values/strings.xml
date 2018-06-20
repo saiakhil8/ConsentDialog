@@ -1,0 +1,44 @@
+<!--
+  ~
+  ~     Copyright (C) 2018  VENKATA SAI AKHIL KUMAR VEMULA (IGCORPORATION.IN)
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string name="lib_name">Consent Form</string>
+    <string name="supporting_label">We care about your privacy and data security. We keep this app free by showing ads.</string>
+
+
+    <string name="main_label">Can we continue to use your data to tailor ads for u?</string>
+    
+    <string name="explanation_label">You can change your choice anytime for %s in the app settings. Our partners will collect data and use a unique identifier on your device to show ads.</string>
+    <string name="privacyurl_supporting_label">Learn how %s and our partners collect and use data.</string>
+
+
+    <string name="listProviders_layout_label">You can change your choice anytime for %s in the app settings. Learn how our partners collect and use data</string>
+    <string name="spinner_main_label">Select to Learn More</string>
+    <string name="lable_learn">How %s use your data</string>
+    <string name="back_lib">Back</string>
+    <string name="agree_button">Agree</string>
+    <string name="non_personalised_explain">We will use a unique identifier on your device to respect your data usage choice. You can change your choice anytime for %s in app settings. </string>
+
+
+    <!--Button Strings-->
+    <string name="personalised_button">Yes, continue to see relevant ads</string>
+    <string name="nonpersonalised_button">No, see ads that are less relevant</string>
+    <string name="pay_button">Pay for the ad-free version</string>
+
+    <string name="error_privacy_load">Privacy Url Error</string>
+</resources>

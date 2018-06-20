@@ -151,7 +151,7 @@ A Fully Customisable, Simple and Easy to use Library for Custom Consent Form.Loo
  Add ConsentDialog to ur app Build.gradle
  
  ```
-    implementation 'com.github.saiakhil90:ConsentDialog:v1.0'
+    implementation 'com.github.saiakhil90:ConsentDialog:v(LatestRelease)'
  
  ```
  

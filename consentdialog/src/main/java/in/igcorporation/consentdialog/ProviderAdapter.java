@@ -62,6 +62,7 @@ public class ProviderAdapter extends ArrayAdapter<AdProviders> {
             convertView = LayoutInflater.from(context).inflate(resource,parent,false);
         }
         TextView textView = convertView.findViewById(android.R.id.text1);
+        textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         textView.setText(adProviders.get(position).getName());
 
         return convertView;

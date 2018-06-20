@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
                 .privacyUrl("https://saiakhil.com")
                 .withPaidOption()
                 .withPersonalisedAdsOption()
+                .withNonPersonalisedAdsOption()
+                .appName("AppName")
                 .build();
 
         consentDialog.show();

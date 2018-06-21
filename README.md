@@ -1,6 +1,6 @@
 # ConsentDialog   [![](https://jitpack.io/v/saiakhil90/ConsentDialog.svg)](https://jitpack.io/#saiakhil90/ConsentDialog)
 
-A Fully Customisable, Simple and Easy to use Library for Custom Consent Form.Looks alike Admob Consent Form and Does everything we want.This Library is for those who have more than 12 adproviders in admob..However can be used for universal adProviders.
+A Fully Customisable, Simple and Easy to use Library for Custom Consent Form.Looks alike Admob Consent Form and Does everything we want.This Library is for those who have more than 12 adproviders in admob..However can be used for universal AdNetworks.
 
 | MainLayout-Shown Immediately after Calling show        |Shown When users click on LearnHow in mainLayout|Shown When Users Clicks on NonPersonalisedButton|
 |-------------|-------------|-------------|
@@ -18,7 +18,7 @@ A Fully Customisable, Simple and Easy to use Library for Custom Consent Form.Loo
  
  # How To Use
  
- AdProviders Class Contains 3 childs.Create an arrayList of adProviders
+ AdProviders Class Contains 3 childs.Create an arrayList of adProviders.We need to show list of adProviders and their privayPolicy to the end user..So we get list of adProviders from the respective adNetworks and add it to the AdProviders ArrayList
  
  ```
     ArrayList<AdProviders> adProviders = new ArrayList();
@@ -134,7 +134,9 @@ A Fully Customisable, Simple and Easy to use Library for Custom Consent Form.Loo
  
  * Set `.appName()` and `.icon()` compulsory.
  
- * Set Required Button..If u dont set Dialog wont show any ..Set Buttons in this way `.withPersonalisedAdsOption()`
+ * Set Required Button..If u dont set Dialog wont show any ..Set Buttons in this way `.withPersonalisedAdsOption()`.
+ 
+ * Set PrivacyClickListener if required -- `.withPrivacyPolicyListener(PrivacyPolicyListener)`.
  
  # Installation
  
@@ -175,18 +177,17 @@ Author: [SaiAkhil](https://github.com/saiakhil90)
 ```
     Copyright (C) 2018  VENKATA SAI AKHIL KUMAR VEMULA (IGCORPORATION.IN)
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    
+        http://www.apache.org/licenses/LICENSE-2.0
+    
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
 ```
      

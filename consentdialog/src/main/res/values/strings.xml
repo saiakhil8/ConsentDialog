@@ -20,7 +20,7 @@
     <string name="supporting_label">We care about your privacy and data security. We keep this app free by showing ads.</string>
 
 
-    <string name="main_label">Can we continue to use your data to tailor ads for u?</string>
+    <string name="main_label">Can we continue to use your data to tailor ads for you?</string>
     
     <string name="explanation_label">You can change your choice anytime for %s in the app settings. Our partners will collect data and use a unique identifier on your device to show ads.</string>
     <string name="privacyurl_supporting_label">Learn how %s and our partners collect and use data.</string>
